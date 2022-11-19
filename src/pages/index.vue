@@ -60,9 +60,17 @@
     .heading {
         font-size: 20px;
         padding: 16px;
+        text-align: center;
     }
 
     button {
         text-transform: uppercase;
+        padding: 4px;
+        letter-spacing: 1px;
+    }
+
+    input {
+        padding: 4px;
+        margin: 0 4px;
     }
 </style>

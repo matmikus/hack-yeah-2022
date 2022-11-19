@@ -6,6 +6,8 @@
             <input name="name" type="text">
             <label for="password">Hasło</label>
             <input name="password" type="password">
+            <label for="password2">Powtórz hasło</label>
+            <input name="password2" type="password">
             <button @click="onSignInClick">Utwórz</button>
         </div>
         <div class="form" v-if="activeNav === 'logowanie'" v-once>
@@ -42,13 +44,14 @@
     .form {
         display: flex;
         flex-direction: column;
+        width: 250px;
     }
 
     .form > * {
         margin: 4px 0;
     }
 
-    .from > button {
-        margin-top: 16px !important;
+    .form > button {
+        margin-top: 24px !important;
     }
 </style>
