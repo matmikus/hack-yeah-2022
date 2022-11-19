@@ -48,7 +48,7 @@
         margin: 4px 0;
     }
 
-    button {
+    .from > button {
         margin-top: 16px !important;
     }
 </style>

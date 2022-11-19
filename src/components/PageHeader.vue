@@ -1,7 +1,7 @@
 <template>
   <header>
     <div class="app-logo">Q</div>
-    <div class="app-name">kreatywna nazwa</div>
+    <div class="app-name">QUIZTORIA POLSKI</div>
   </header>
 </template>
 

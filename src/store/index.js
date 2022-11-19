@@ -10,6 +10,9 @@ export const mutations = {
     },
     setNav (state, data) {
         state.activeNav = data;
+    },
+    addToList (state, data) {
+        state.list.push(data);
     }
 };
 

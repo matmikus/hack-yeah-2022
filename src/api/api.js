@@ -1,7 +1,8 @@
 const axios = require('axios');
 const replaceSpecialCharacters = require('replace-special-characters');
+const htmlDecode = require('js-htmlencode').htmlDecode;
+
 import { parse } from 'node-html-parser';
-import { decode } from 'html-entities';
 
 module.exports = async (req, res) => {
     const phrase = req.url.slice(4);
@@ -23,7 +24,7 @@ module.exports = async (req, res) => {
     const root = parse(data);
 
     const results = root.querySelectorAll('.res-item > a:first-child').map(el => {
-        return { link: el.attrs.href, name: decode(replaceSpecialCharacters(el.innerText)) };
+        return { link: el.attrs.href, name: htmlDecode(replaceSpecialCharacters(el.innerText)) };
     });
 
     res.end(JSON.stringify(results));
