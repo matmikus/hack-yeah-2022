@@ -8,7 +8,7 @@
         "precommit": "npm run lint",
         "heroku-postbuild": "npm run build"
     },
-    "dependencies": {
+    "devDependencies": {
         "@nuxtjs/axios": "5.5.4",
         "@nuxtjs/dayjs": "^1.4.1",
         "axios": "^0.27.2",
@@ -18,13 +18,10 @@
         "file-saver": "^2.0.5",
         "html2pdf.js": "^0.10.1",
         "js-htmlencode": "^0.3.0",
-        "lru-cache": "^5.1.1",
         "node-html-parser": "^6.1.4",
         "nuxt": "2.15.8",
         "nuxt-env": "0.0.3",
-        "replace-special-characters": "^1.2.7"
-    },
-    "devDependencies": {
+        "replace-special-characters": "^1.2.7",
         "@nuxtjs/style-resources": "^1.0.0",
         "babel-eslint": "^8.2.6",
         "eslint": "^5.16.0",
