@@ -12,5 +12,6 @@ module.exports = {
                 fs: 'empty'
             }
         }
-    }
+    },
+    mode: 'universal'
 };
