@@ -12,6 +12,5 @@ module.exports = {
                 fs: 'empty'
             }
         }
-    },
-    target: 'static'
+    }
 };
