@@ -9,7 +9,7 @@
         "heroku-postbuild": "nuxt build"
     },
     "dependencies": {
-        "@nuxtjs/axios": "5.5.4",
+        "@nuxtjs/axios": "^5.13.6",
         "@nuxtjs/dayjs": "^1.4.1",
         "axios": "^0.27.2",
         "axios-extensions": "^3.0.6",
@@ -19,7 +19,7 @@
         "html2pdf.js": "^0.10.1",
         "js-htmlencode": "^0.3.0",
         "node-html-parser": "^6.1.4",
-        "nuxt": "2.15.8",
+        "nuxt": "^3.0.0",
         "nuxt-env": "0.0.3",
         "replace-special-characters": "^1.2.7"
     },
@@ -31,7 +31,7 @@
         "eslint-loader": "^2.2.1",
         "eslint-plugin-vue": "^5.2.3",
         "extract-text-webpack-plugin": "^4.0.0-beta.0",
-        "nuxt-svg-loader": "^1.0.1",
+        "nuxt-svg-loader": "^0.1.0",
         "sass": "^1.53.0",
         "sass-loader": "^10"
     }
