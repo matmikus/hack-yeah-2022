@@ -72,12 +72,18 @@
                     return;
                 }
 
-                axios.get(`/api?q=${phrase}`).then((res) => {
-                    if (phrase === this.searchPhrase) {
-                        this.searchResults = res.data;
-                        this.loading = false;
+                setTimeout(() => {
+                    if (phrase !== this.searchPhrase) {
+                        return;
                     }
-                });
+
+                    axios.get(`/api?q=${phrase}`).then((res) => {
+                        if (phrase === this.searchPhrase) {
+                            this.searchResults = res.data;
+                            this.loading = false;
+                        }
+                    });
+                }, 600);
             },
             addSource (source) {
                 this.quizContent.push({
